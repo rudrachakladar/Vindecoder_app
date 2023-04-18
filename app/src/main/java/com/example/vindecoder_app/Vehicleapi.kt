@@ -6,7 +6,7 @@ import retrofit2.http.Path
 
 interface Vehicleapi {
     @GET("DecodeVinValues/{vin}?format=json")
-    suspend fun getVinDetails(@Path ("vin") id:String):Response<VinDetails>
+    suspend fun getVinDetails(@Path ("vin") id:String):Response<VinResponse>
 
 
 }
